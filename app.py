@@ -2,6 +2,7 @@ import os
 import easyocr
 import gradio as gr 
 from PIL import Image
+import re
 
 reader = easyocr.Reader(['en', 'hi'], gpu=False)
 
@@ -30,10 +31,19 @@ def extract_text(image_path):
 
 def search_text(image_path, keyword):
     extracted_text = extract_text(image_path)
-    if keyword.lower() in extracted_text.lower():
-        return f"Keyword '{keyword}' found in the extracted text.", extracted_text
+
+    escaped_keyword = re.escape(keyword);
+    highlighted_text = re.sub(
+        f'({escaped_keyword})', 
+        r'<mark style="background-color: lightblue; color: black;">\1</mark>', 
+        extracted_text, 
+        flags=re.IGNORECASE
+    )
+
+    if re.search(escaped_keyword, extracted_text, re.IGNORECASE):
+        return f"Keyword '{keyword}' found in the extracted text.", highlighted_text
     else:
-        return f"Keyword '{keyword}' not found in the extracted text.", extracted_text
+        return f"Keyword '{keyword}' not found in the extracted text.", highlighted_text
 
 def create_interface():
     interface = gr.Interface(
@@ -44,7 +54,7 @@ def create_interface():
         ],
         outputs=[
             gr.Textbox(label="Search Result"),  
-            gr.Textbox(label="Extracted Text")  
+            gr.HTML(label="Extracted Text")  
         ],
         title="OCR and Keyword Search Application",
         description="Upload an image containing text in English or Hindi. Enter a keyword to search within the extracted text.",
