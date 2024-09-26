@@ -1,3 +1,15 @@
+---
+title: OCRQuest
+emoji: 🔥
+colorFrom: indigo
+colorTo: green
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+---
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
 # OCRQuest
 
 # OCR and Keyword Search Web Application
@@ -28,16 +40,3 @@ and activated using "ocr-env\Scripts\activate"
 1. Clone this repository:
    ```bash
    git clone https://github.com/sprakhil/OCR_Project
-
-
----
-title: OCRQuest
-emoji: 🔥
-colorFrom: indigo
-colorTo: green
-sdk: gradio
-sdk_version: 4.44.0
-app_file: app.py
-pinned: false
----
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
