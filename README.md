@@ -1,9 +1,13 @@
-# OCR_Project
+# OCRQuest
 
 # OCR and Keyword Search Web Application
 
 ## Overview
 This project is a web-based prototype that performs Optical Character Recognition (OCR) on an uploaded image containing text in Hindi and English. The application also implements a basic keyword search functionality based on the extracted text.
+
+## Virtual Environment setup
+setup virtual environment using "python -m venv ocr-env"
+and activated using "ocr-env\Scripts\activate"
 
 ## Features
 - Upload an image in JPEG, PNG, or other common formats.
@@ -25,17 +29,4 @@ This project is a web-based prototype that performs Optical Character Recognitio
    ```bash
    git clone https://github.com/sprakhil/OCR_Project
 
-#huggingface README content
-
-title: OCRQuest
-emoji: 🔥
-colorFrom: indigo
-colorTo: green
-sdk: gradio
-sdk_version: 4.44.0
-app_file: app.py
-pinned: false
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 
