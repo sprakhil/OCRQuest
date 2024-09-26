@@ -29,4 +29,16 @@ and activated using "ocr-env\Scripts\activate"
    ```bash
    git clone https://github.com/sprakhil/OCR_Project
 
+## Hugginface README content
 
+---
+title: OCRQuest
+emoji: 🔥
+colorFrom: indigo
+colorTo: green
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+---
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
