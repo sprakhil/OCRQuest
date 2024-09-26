@@ -21,6 +21,16 @@ This project is a web-based prototype that performs Optical Character Recognitio
 Setup virtual environment using "python -m venv ocr-env"
 and activated using "ocr-env\Scripts\activate"
 
+## How can we run locally
+Implement ocr and gradio(for user interface) in a python file(here I have app.py) save file and run it. We can run file using terminal by "python app.py" command. Gradio will launch the application and provide a local URL where we can test it in our browser.
+
+## Deployment Process
+- I have deployed this application on Hugging Face Spaces.
+- To deploy on Hugging Face Spaces:
+- 1.Create a repository on Hugging Face under the Spaces tab.
+- 2.Add app.py file and requirements.txt file that lists all dependencies
+- 3.Push the repository to Hugging Face, and it will automatically deploy the application.
+
 ## Features
 - Upload an image in JPEG, PNG, or other common formats.
 - Extract text from the uploaded image using EasyOCR.
