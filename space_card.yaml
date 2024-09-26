@@ -1,0 +1,12 @@
+model:
+  name: "OCRQuest"
+  version: "1.0"
+  description: "A prototype for Optical Character Recognition processing."
+  authors:
+    - name: "Akhilesh Yadav"
+      email: "sprakhil8927@example.com"
+  license: "MIT"
+  tags:
+    - OCR
+    - Text Recognition
+    - Image Processing
