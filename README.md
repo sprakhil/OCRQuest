@@ -6,7 +6,7 @@
 This project is a web-based prototype that performs Optical Character Recognition (OCR) on an uploaded image containing text in Hindi and English. The application also implements a basic keyword search functionality based on the extracted text.
 
 ## Virtual Environment setup
-setup virtual environment using "python -m venv ocr-env"
+Setup virtual environment using "python -m venv ocr-env"
 and activated using "ocr-env\Scripts\activate"
 
 ## Features
@@ -29,7 +29,6 @@ and activated using "ocr-env\Scripts\activate"
    ```bash
    git clone https://github.com/sprakhil/OCR_Project
 
-## Hugginface README content
 
 ---
 title: OCRQuest
