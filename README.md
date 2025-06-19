@@ -49,4 +49,4 @@ Implement ocr and gradio(for user interface) in a python file(here I have app.py
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sprakhil/OCR_Project
+   git clone https://github.com/sprakhil/OCRQuest
